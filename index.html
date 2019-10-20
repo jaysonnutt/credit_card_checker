@@ -14,17 +14,16 @@
     <div id='card_number'>
         <h1 class="ui header">Credit Card Verifier</h1>
         <div class="ui left icon input">
-            <input type="text" placeholder="credit card number" id='input'>
+            <input type="tel" placeholder="credit card number" id='input'>
             <i class="credit card icon"></i>
         </div>
-        <br>
-        <br>
+        <br><br>
         <button class="ui green button" onclick="check_card()" onsubmit="check_card()">Check</button>
         <button class="ui blue button" onclick="document.getElementById('input').value = ''; document.getElementById('result').innerHTML = ''; document.getElementById('card_type').innerHTML = ''">Clear</button>
-        <br>
-        <br>
+        <br><br>
         <div id='result'></div>
         <div id='card_type'></div>
+        <a href="https://github.com/jaysonnutt/credit_card_checker" target="_blank">Link to source code</a>
     </div>
 </body>
 

@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Credit Card Verifier</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <script src="main.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id='card_number'>
+        <h1 class="ui header">Credit Card Verifier</h1>
+        <div class="ui left icon input">
+            <input type="text" placeholder="credit card number" id='input'>
+            <i class="credit card icon"></i>
+        </div>
+        <br>
+        <br>
+        <button class="ui green button" onclick="check_card()" onsubmit="check_card()">Check</button>
+        <button class="ui blue button" onclick="document.getElementById('input').value = ''; document.getElementById('result').innerHTML = ''; document.getElementById('card_type').innerHTML = ''">Clear</button>
+        <br>
+        <br>
+        <div id='result'></div>
+        <div id='card_type'></div>
+    </div>
+</body>
+
+</html>

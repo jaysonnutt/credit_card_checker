@@ -13,6 +13,14 @@
 <body>
     <div id='card_number'>
         <h1 class="ui header">Credit Card Checker</h1>
+        <p>
+            Valid credit card numbers have a particular pattern to them. Luhn's algorithm<br>
+            is used to verify this pattern. More information about the algorithm can be found <a href="https://en.wikipedia.org/wiki/Luhn_algorithm" target="_blank">here</a>.<br>
+            If the card number does not match the pattern it can be determined that the credit<br>
+            card number is not valid. This tool performs the algorithm and tells you whether the<br>
+            card number entered is valid or not.
+            <br><br>
+        </p>
         <div class="ui left icon input">
             <input type="tel" placeholder="credit card number" id='input'>
             <i class="credit card icon"></i>
@@ -25,7 +33,11 @@
         <div id='card_type'></div>
         <a href="https://github.com/jaysonnutt/credit_card_checker" target="_blank">Link to source code</a>
         <br><br>
-        <p id='disclaimer'>All information input here is processed locally through JavaScrpit.<br>No information is sent outside of the website.</p>
+        <p id='disclaimer'>
+            This project is open-sourced. You can view the code from the link above.<br>
+            All information input here is processed locally in your browser.<br>
+            No information is sent outside of the website.
+        </p>
     </div>
 </body>
 
